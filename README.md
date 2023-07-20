@@ -1,6 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+`em desenvolvimento`
 
-## Getting Started
+## Começando
 
 First, run the development server:
 
@@ -12,23 +12,19 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) com o seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## O Problema
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Os operadores do direito brasileiro, sobretudo aqueles que lidam com o direito penal, lidam quase que diariamente com cálculos envolvendo datas.
 
-## Learn More
+O sistema penal brasileiro define que as penas serão aplicadas em `X` anos, `Y` meses e `Z` dias. Assim advogados, promotores, familiares e apenados devem se virar fazendo complexos cálculos sobre datas.
 
-To learn more about Next.js, take a look at the following resources:
+Além disso, para que o apenado possa sair do regime fechado para o aberto, deverá cumprir um mínimo de tempo de pena, conforme previsto no Lei de Execução Penal, sendo que essa quantidade de pena está definida em porcentagem ou fração nas Leis brasileiras.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pensando nisso, a calculadora pretende facilitar a vida do operador de direito, trazendo a seguinte funcionalidade:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* Informar, a partir das datas informadas, quando encerrará o cumprimento da pena.
+* Calcular quando o apenado poderá progredir de regime, levando em consideração a fração informada pelo usuário.
+* Incluir no cálculo os dias de remição de pena, previstos na lei.
+* Calcular os prazos de prescrição, a partir dos marcos temporais informados.
